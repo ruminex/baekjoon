@@ -2,11 +2,11 @@
 
 int main() {
 	
-	int up_input, down_input;
+	int down_input, up_input;
 	int first, second, third, final_result;
 	
-	scanf("%d",&up_input);
 	scanf("%d",&down_input);
+	scanf("%d",&up_input);
 	
 	first = up_input % 10;
 	up_input = up_input / 10;
@@ -18,13 +18,15 @@ int main() {
 	
 	
 	first = first * down_input;
-	second = second * down_input * 10;
-	third = third * down_input * 100;
-	final_result = first + second + third;
+	second = second * down_input;
+	third = third * down_input;
+	final_result = first + (second*10) + (third*100);
 	
-	printf("%d\n",&first);
-	printf("%d\n",&second);
-	printf("%d\n",&third);
-	printf("%d\n",&final_result);
+	printf("%d\n",first);
+	printf("%d\n",second);
+	printf("%d\n",third);
+	printf("%d\n",final_result);
+	
+	return 0;
 	
 }
