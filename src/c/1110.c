@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 	int N, tmp, t_digit, u_digit, result, Num_tmp;
